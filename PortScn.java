@@ -13,7 +13,7 @@ public class PortScn
 	public static void main(String[] args)
 	{
 		Counter c = new Counter();
-		// total posts scanned = 50* 1000
+		// total ports scanned = 50* 1000
 		for(int i=0; i<50; i++)
 		{
 			Thread temp = new Thread(new Runnable()
