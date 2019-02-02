@@ -14,7 +14,7 @@ public class PortScn
 	{
 		Counter c = new Counter();
 		// total ports scanned = 50* 1000
-		for(int i=0; i<50; i++)
+		for(int i=0; i<70; i++)
 		{
 			Thread temp = new Thread(new Runnable()
 			{	public void run()
@@ -28,7 +28,8 @@ public class PortScn
 							c.increment();
 							// specify ip address you want to scan
 							s = new Socket("127.0.0.1",port);
-							System.out.println("Port open:"+c.count);
+						 
+							System.out.println(s);
 						}catch(Exception e){
 						}
 						
